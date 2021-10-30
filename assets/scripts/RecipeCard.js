@@ -3,6 +3,8 @@ class RecipeCard extends HTMLElement {
     // Part 1 Expose - TODO
 
     // You'll want to attach the shadow DOM here
+    super();
+    const shadow = this.attachShadow({mode: 'open'});
   }
 
   set data(data) {
@@ -100,6 +102,98 @@ class RecipeCard extends HTMLElement {
     // created in the constructor()
 
     // Part 1 Expose - TODO
+    this.shadowRoot.appendChild(card);
+    this.shadowRoot.appendChild(styleElem);
+    if (searchForKey(data, "ratingValue") == undefined) {
+      let thumbnail = document.createElement('img');
+      thumbnail.setAttribute('src', searchForKey(data, "thumbnailUrl"))
+      thumbnail.setAttribute('alt', 'Recipe Title')
+      card.appendChild(thumbnail);
+      let pTitle = document.createElement('p');
+      pTitle.setAttribute('class', 'title');
+      let a = document.createElement('a');
+      a.setAttribute('href', getUrl(data));
+      a.textContent = searchForKey(data, 'headline');
+      pTitle.appendChild(a);
+      card.appendChild(pTitle);
+      let pOrg = document.createElement('p');
+      pOrg.setAttribute('class', 'organization');
+      pOrg.textContent = getOrganization(data);
+      card.appendChild(pOrg);
+      let div = document.createElement('div');
+      div.setAttribute('class', 'rating');
+      let span = document.createElement('span');
+      span.textContent = "No Reviews";
+      div.appendChild(span);
+      card.appendChild(div);
+      let time = document.createElement('time');
+      time.textContent = convertTime(searchForKey(data, 'totalTime'));
+      card.appendChild(time);
+      let pIng = document.createElement('p');
+      pIng.setAttribute('class', 'ingredients');
+      pIng.textContent = createIngredientList(searchForKey(data, 'recipeIngredient'));
+      card.appendChild(pIng);
+    }
+    else {
+      let thumbnail = document.createElement('img');
+      thumbnail.setAttribute('src', searchForKey(data, "thumbnailUrl"))
+      thumbnail.setAttribute('alt', 'Recipe Title')
+      card.appendChild(thumbnail);
+      let pTitle = document.createElement('p');
+      pTitle.setAttribute('class', 'title');
+      let a = document.createElement('a');
+      a.setAttribute('href', getUrl(data));
+      a.textContent = searchForKey(data, 'headline');
+      pTitle.appendChild(a);
+      card.appendChild(pTitle);
+      let pOrg = document.createElement('p');
+      pOrg.setAttribute('class', 'organization');
+      pOrg.textContent = getOrganization(data);
+      card.appendChild(pOrg);
+      let div = document.createElement('div');
+      div.setAttribute('class', 'rating');
+      let spanAverage = document.createElement('span');
+      spanAverage.textContent = searchForKey(data, 'ratingValue');
+      let imgStars = document.createElement('img');
+      switch (Math.round(searchForKey(data, 'ratingValue'))) {
+        case 5:
+          imgStars.setAttribute('src', './assets/images/icons/5-star.svg');
+          imgStars.setAttribute('alt', '5 stars');
+          break;
+        case 4:
+          imgStars.setAttribute('src', './assets/images/icons/4-star.svg');
+          imgStars.setAttribute('alt', '4 stars');
+          break;
+        case 3:
+          imgStars.setAttribute('src', './assets/images/icons/3-star.svg');
+          imgStars.setAttribute('alt', '3 stars');
+          break;
+        case 2:
+          imgStars.setAttribute('src', './assets/images/icons/2-star.svg');
+          imgStars.setAttribute('alt', '2 stars');
+          break;
+        case 1:
+          imgStars.setAttribute('src', './assets/images/icons/1-star.svg');
+          imgStars.setAttribute('alt', '1 stars');
+          break;
+        default:
+          imgStars.setAttribute('src', './assets/images/icons/0-star.svg');
+          imgStars.setAttribute('alt', '0 stars');
+      }
+      let spanNum = document.createElement('span');
+      spanNum.textContent = "("+searchForKey(data, "ratingCount")+")";
+      div.appendChild(spanAverage)
+      div.appendChild(imgStars);
+      div.appendChild(spanNum);
+      card.appendChild(div);
+      let time = document.createElement('time');
+      time.textContent = convertTime(searchForKey(data, 'totalTime'));
+      card.appendChild(time);
+      let pIng = document.createElement('p');
+      pIng.setAttribute('class', 'ingredients');
+      pIng.textContent = createIngredientList(searchForKey(data, 'recipeIngredient'));
+      card.appendChild(pIng);
+    }
   }
 }
 
