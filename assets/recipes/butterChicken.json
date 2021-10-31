@@ -1,0 +1,268 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.recipetineats.com/#organization",
+      "name": "RecipeTin Eats",
+      "url": "https://www.recipetineats.com/",
+      "sameAs": [
+        "https://www.facebook.com/RecipeTinEats",
+        "http://instagram.com/recipe_tin",
+        "https://www.linkedin.com/in/nagi-maehashi-9779648b",
+        "https://www.youtube.com/c/recipetineats",
+        "http://www.pinterest.com/recipetin/"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.recipetineats.com/#logo",
+        "inLanguage": "en-US",
+        "url": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+        "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+        "width": 2591,
+        "height": 347,
+        "caption": "RecipeTin Eats"
+      },
+      "image": { "@id": "https://www.recipetineats.com/#logo" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.recipetineats.com/#website",
+      "url": "https://www.recipetineats.com/",
+      "name": "RecipeTin Eats",
+      "description": "Fast Prep, Big Flavours",
+      "publisher": { "@id": "https://www.recipetineats.com/#organization" },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.recipetineats.com/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.recipetineats.com/butter-chicken/#primaryimage",
+      "inLanguage": "en-US",
+      "url": "https://www.recipetineats.com/wp-content/uploads/2019/01/Butter-Chicken_5.jpg",
+      "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2019/01/Butter-Chicken_5.jpg",
+      "width": 900,
+      "height": 1260,
+      "caption": "Butter Chicken served over basmati rice in a bowl, ready to be served"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.recipetineats.com/butter-chicken/#webpage",
+      "url": "https://www.recipetineats.com/butter-chicken/",
+      "name": "Butter Chicken | RecipeTin Eats",
+      "isPartOf": { "@id": "https://www.recipetineats.com/#website" },
+      "primaryImageOfPage": {
+        "@id": "https://www.recipetineats.com/butter-chicken/#primaryimage"
+      },
+      "datePublished": "2019-01-06T07:00:00+00:00",
+      "dateModified": "2021-09-06T01:14:27+00:00",
+      "description": "The BEST Butter Chicken recipe you will ever make! A chef recipe, easy to make and you can get all the ingredients at the grocery store!!",
+      "breadcrumb": {
+        "@id": "https://www.recipetineats.com/butter-chicken/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": ["https://www.recipetineats.com/butter-chicken/"]
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.recipetineats.com/butter-chicken/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.recipetineats.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Collections",
+          "item": "https://www.recipetineats.com/category/collections/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Curries",
+          "item": "https://www.recipetineats.com/category/collections/curry-recipes/"
+        },
+        { "@type": "ListItem", "position": 4, "name": "Butter Chicken" }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.recipetineats.com/butter-chicken/#article",
+      "isPartOf": {
+        "@id": "https://www.recipetineats.com/butter-chicken/#webpage"
+      },
+      "author": {
+        "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9"
+      },
+      "headline": "Butter Chicken",
+      "datePublished": "2019-01-06T07:00:00+00:00",
+      "dateModified": "2021-09-06T01:14:27+00:00",
+      "wordCount": 1513,
+      "commentCount": 1777,
+      "publisher": { "@id": "https://www.recipetineats.com/#organization" },
+      "image": {
+        "@id": "https://www.recipetineats.com/butter-chicken/#primaryimage"
+      },
+      "thumbnailUrl": "https://www.recipetineats.com/wp-content/uploads/2019/01/Butter-Chicken_5.jpg",
+      "articleSection": [
+        "Chicken",
+        "Chicken Breast",
+        "Curries",
+        "Gluten Free Recipes",
+        "Iconic Dishes",
+        "Indian Recipes",
+        "Main Dishes",
+        "Most Popular",
+        "Quick and Easy",
+        "Winter Warmers"
+      ],
+      "inLanguage": "en-US",
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": ["https://www.recipetineats.com/butter-chicken/#respond"]
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9",
+      "name": "Nagi",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://www.recipetineats.com/#personlogo",
+        "inLanguage": "en-US",
+        "url": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+        "contentUrl": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+        "caption": "Nagi"
+      },
+      "description": "I believe you can make great food with everyday ingredients even if you\u2019re short on time and cost conscious. You just need to cook clever and get creative!",
+      "sameAs": ["http:////www.recipetineats.com/about-me/"]
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Recipe",
+      "name": "Butter Chicken",
+      "author": { "@type": "Person", "name": "Nagi | RecipeTin Eats" },
+      "description": "RECIPE VIDEO above. This is a Chef recipe and is one of the easiest Indian curries to make. The Butter Chicken Sauce is so good that you will want it on tap! Many restaurants take it over the top by adding copious amounts of ghee or butter into the sauce, but you'll find this rich enough as it is with the rich, creamy sauce!",
+      "datePublished": "2019-01-06T18:00:00+00:00",
+      "image": [
+        "https://www.recipetineats.com/wp-content/uploads/2019/01/Butter-Chicken_5-SQ.jpg",
+        "https://www.recipetineats.com/wp-content/uploads/2019/01/Butter-Chicken_5-SQ.jpg?w=500&h=500&crop=1",
+        "https://www.recipetineats.com/wp-content/uploads/2019/01/Butter-Chicken_5-SQ.jpg?w=500&h=375&crop=1",
+        "https://www.recipetineats.com/wp-content/uploads/2019/01/Butter-Chicken_5-SQ.jpg?w=480&h=270&crop=1"
+      ],
+      "recipeYield": ["3", "3 - 4"],
+      "prepTime": "PT10M",
+      "cookTime": "PT25M",
+      "totalTime": "PT35M",
+      "recipeIngredient": [
+        "1/2 cup plain yoghurt (, full fat)",
+        "1 tbsp lemon juice",
+        "1 tsp tumeric powder",
+        "2 tsp garam masala  ((Note 1))",
+        "1/2 tsp chilli powder or cayenne pepper powder  ((Note 2))",
+        "1 tsp ground cumin",
+        "1 tbsp ginger, freshly grated",
+        "2 cloves garlic, crushed",
+        "1.5 lb / 750 g   chicken thigh fillets, cut into bite size pieces",
+        "2 tbsp (30 g)  ghee or butter,  ( OR 1 tbsp vegetable oil  (Note 3))",
+        "1 cup tomato passata (aka tomato puree) ((Note 4))",
+        "1 cup heavy / thickened cream ((Note 5))",
+        "1 tbsp sugar",
+        "1 1/4 tsp salt",
+        "Basmati rice",
+        "White rice",
+        "Coriander/cilantro (optional)"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "text": "Optional blitz: for an extra smooth sauce, combine the Marinade ingredients (except the chicken) in a food processor and blend until smooth. (I do not do this)",
+          "name": "Optional blitz: for an extra smooth sauce, combine the Marinade ingredients (except the chicken) in a food processor and blend until smooth. (I do not do this)",
+          "url": "https://www.recipetineats.com/butter-chicken/#wprm-recipe-20255-step-0-0"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Marinade: Combine the Marinade ingredients with the chicken in a bowl. Cover and refrigerate overnight, or up to 24 hours (minimum 3 hrs).",
+          "name": "Marinade: Combine the Marinade ingredients with the chicken in a bowl. Cover and refrigerate overnight, or up to 24 hours (minimum 3 hrs).",
+          "url": "https://www.recipetineats.com/butter-chicken/#wprm-recipe-20255-step-0-1"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Cook chicken:&nbsp;Heat the ghee (butter or oil) over high heat in a large fry pan. Take the chicken out of the Marinade but do not wipe or shake off the marinade from the chicken (but don't pour the Marinade left in the bowl into the fry pan).&nbsp;",
+          "name": "Cook chicken:&nbsp;Heat the ghee (butter or oil) over high heat in a large fry pan. Take the chicken out of the Marinade but do not wipe or shake off the marinade from the chicken (but don't pour the Marinade left in the bowl into the fry pan).&nbsp;",
+          "url": "https://www.recipetineats.com/butter-chicken/#wprm-recipe-20255-step-0-2"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Place chicken in the fry pan and cook for around 3 minutes, or until the chicken is white all over (it doesn't really brown because of the Marinade).",
+          "name": "Place chicken in the fry pan and cook for around 3 minutes, or until the chicken is white all over (it doesn't really brown because of the Marinade).",
+          "url": "https://www.recipetineats.com/butter-chicken/#wprm-recipe-20255-step-0-3"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Sauce:\u00a0Add the tomato passata, cream, sugar and salt. Also add any remaining marinade left in the bowl. Turn down to low and simmer for 20 minutes.\u00a0Do a taste test to see if it needs more salt.",
+          "name": "Sauce:\u00a0Add the tomato passata, cream, sugar and salt. Also add any remaining marinade left in the bowl. Turn down to low and simmer for 20 minutes.\u00a0Do a taste test to see if it needs more salt.",
+          "url": "https://www.recipetineats.com/butter-chicken/#wprm-recipe-20255-step-0-4"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Garnish with coriander/cilantro leaves if using. Serve with basmati rice.",
+          "name": "Garnish with coriander/cilantro leaves if using. Serve with basmati rice.",
+          "url": "https://www.recipetineats.com/butter-chicken/#wprm-recipe-20255-step-0-5"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "The Butter Chicken is pictured with my very easy No Yeast Flatbread and no-fry papadums (Note 5).",
+          "name": "The Butter Chicken is pictured with my very easy No Yeast Flatbread and no-fry papadums (Note 5).",
+          "url": "https://www.recipetineats.com/butter-chicken/#wprm-recipe-20255-step-0-6"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.99",
+        "ratingCount": "541"
+      },
+      "recipeCategory": ["Chicken", "Curry"],
+      "recipeCuisine": ["Indian"],
+      "keywords": "Butter Chicken",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "310 g",
+        "calories": "402 kcal",
+        "carbohydrateContent": "9.8 g",
+        "proteinContent": "39.8 g",
+        "fatContent": "23.4 g",
+        "saturatedFatContent": "9.3 g",
+        "cholesterolContent": "193 mg",
+        "sodiumContent": "928 mg",
+        "fiberContent": "0.9 g",
+        "sugarContent": "6.5 g"
+      },
+      "@id": "https://www.recipetineats.com/butter-chicken/#recipe",
+      "isPartOf": {
+        "@id": "https://www.recipetineats.com/butter-chicken/#article"
+      },
+      "mainEntityOfPage": "https://www.recipetineats.com/butter-chicken/#webpage"
+    }
+  ]
+}
